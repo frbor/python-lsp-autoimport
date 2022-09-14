@@ -11,7 +11,6 @@ pylsp plugin code is taken from [pyls-isort](https://github.com/paradoxxxzero/py
 Install in same environment as python-lsp-server. I recommend to use pipx:
 
 ```bash
-
 pip install --user pipx
 pipx install python-lsp-server
 pipx inject python-lsp-server python-lsp-autoimport 
