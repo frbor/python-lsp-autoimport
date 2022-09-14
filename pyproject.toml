@@ -1,0 +1,29 @@
+[tool]
+
+[tool.poetry]
+name = "pylsp-autoimport"
+version = "0.0.1"
+description = "Python LSP auto import plugin"
+license = "MIT"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+homepage = "https://github.com/frbor/pylsp-autoimport"
+authors = ["Fredrik Borg <fredrikb.borg@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+python-lsp-server = "*"
+autoimport = "*"
+isort = ">=5.10.0"
+
+[tool.poetry.plugins."pylsp"]
+"pylsp_autoimport" = "pylsp_autoimport.plugin"
+
+pythonVersion = "3.6"
+pythonPlatform = "Linux"
